@@ -7,8 +7,8 @@ on:
       - dev
 
 jobs:
-  app-tests:
-    name: Run Application Tests
+  setup-and-build:
+    name: Setup and Build
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -20,13 +20,13 @@ jobs:
           - 3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Setup PHP 8.3
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.3
           extension-csv: mbstring, bcmath
-      - name: Checkout code
-        uses: actions/checkout@v4
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Composer Dependencies
