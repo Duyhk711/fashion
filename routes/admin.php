@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'landing');
 Route::match(['get', 'post'], '/dashboard', function () {
-    return view('dashboard');
+    return view('client');
 })->name('dashboard');
 Route::view('/pages/slick', 'pages.slick');
 Route::view('/pages/datatables', 'pages.datatables');
