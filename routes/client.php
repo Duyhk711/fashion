@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::view('/home', 'client.home');
 Route::view('/shop', 'client.shop');
 Route::view('/empty', 'client.empty');
+Route::view('/myaccount', 'client.my-account');
