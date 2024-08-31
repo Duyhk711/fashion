@@ -152,9 +152,9 @@
                     <div class="col-1 col-sm-1 col-md-1 col-lg-8 align-self-center d-menu-col">
                         <nav class="navigation" id="AccessibleNav">
                             <ul id="siteNav" class="site-nav medium center">
-                                <li class="lvl1 parent dropdown"><a href="#">Trang chủ </i></a>
+                                <li class="lvl1 parent dropdown"><a href="/home">Trang chủ </i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="#">Cửa hàng</a>
+                                <li class="lvl1 parent megamenu"><a href="/shop">Cửa hàng</a>
                                     <div class="megamenu style1">
 
                                     </div>
@@ -203,13 +203,6 @@
                                                     <select class="rgsearch-category rounded-end-0">
                                                         <option value="0">All Categories</option>
                                                         <option value="1">- All</option>
-                                                        <option value="2">- Fashion</option>
-                                                        <option value="3">- Shoes</option>
-                                                        <option value="4">- Electronic</option>
-                                                        <option value="5">- Jewelry</option>
-                                                        <option value="6">- Vegetables</option>
-                                                        <option value="7">- Furniture</option>
-                                                        <option value="8">- Accessories</option>
                                                     </select>
                                                 </div>
                                                 <div class="input-box d-flex fl-1">
